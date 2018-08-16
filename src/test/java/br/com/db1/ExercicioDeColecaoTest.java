@@ -1,5 +1,6 @@
 package br.com.db1;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
@@ -21,5 +22,11 @@ public class ExercicioDeColecaoTest {
 	@Test
 	public void Exercicio2Test() {
 		assertTrue(2 == exercicio.exercicio2());
+	}
+	
+	@Test
+	public void Exercicio3Test() {
+		List<String> nomes = exercicio.exercicio3();
+		assertFalse(nomes.contains("Pai" + "Mae"));
 	}
 }
