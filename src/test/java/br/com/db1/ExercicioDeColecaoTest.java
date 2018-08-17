@@ -44,4 +44,10 @@ public class ExercicioDeColecaoTest {
 		assertTrue(cores.get(1) == "Branco");
 		assertTrue(cores.get(2) == "Preto");	
 	}
+	
+	@Test
+	public void Exercicio6Test() {
+		List<String> cores = exercicio.exercicio6();
+		assertFalse(cores.contains("Azul"));
+	}
 }

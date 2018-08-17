@@ -37,4 +37,13 @@ public class ExercicioDeColecao {
 		Collections.sort(cores);
 		return cores;
 	}
+
+	public List<String> exercicio6() {
+		List<String> cores = new ArrayList<String>();
+		cores.add("Azul");
+		cores.add("Preto");
+		cores.add("Branco");
+		cores.remove("Azul");
+		return cores;
+	}
 }
