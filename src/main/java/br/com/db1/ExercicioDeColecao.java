@@ -1,7 +1,6 @@
 package br.com.db1;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -28,7 +27,9 @@ public class ExercicioDeColecao {
 	}
 
 	public Integer exercicio2() {
-		List<String> nomes = Arrays.asList("Diogo", "Franco");
+		List<String> nomes = new ArrayList<String>();
+		nomes.add("Diogo");
+		nomes.add("Franco");
 		return nomes.size();
 	}
 
@@ -55,5 +56,10 @@ public class ExercicioDeColecao {
 	public List<String> exercicio6() {
 		cores.remove("Azul");
 		return cores;
+	}
+
+	public List<String> exercicio7() {
+		Collections.sort(parentes, Collections.reverseOrder());
+		return parentes;
 	}
 }

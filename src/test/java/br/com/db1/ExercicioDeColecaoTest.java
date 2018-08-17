@@ -14,9 +14,9 @@ public class ExercicioDeColecaoTest {
 	@Test
 	public void Exercicio1Test() {
 		List<String> cores = exercicio.exercicio1();
-		assertTrue(cores.get(0) == "Azul");
-		assertTrue(cores.get(1) == "Preto");
-		assertTrue(cores.get(2) == "Branco");	
+		assertTrue(cores.contains("Azul"));
+		assertTrue(cores.contains("Preto"));
+		assertTrue(cores.contains("Branco"));	
 	}
 	
 	@Test
@@ -40,14 +40,26 @@ public class ExercicioDeColecaoTest {
 	@Test
 	public void Exercicio5Test() {
 		List<String> cores = exercicio.exercicio5();
-		assertTrue(cores.get(0) == "Azul");
-		assertTrue(cores.get(1) == "Branco");
-		assertTrue(cores.get(2) == "Preto");	
+		assertTrue(cores.contains("Azul"));
+		assertTrue(cores.contains("Branco"));
+		assertTrue(cores.contains("Preto"));
 	}
 	
 	@Test
 	public void Exercicio6Test() {
 		List<String> cores = exercicio.exercicio6();
 		assertFalse(cores.contains("Azul"));
+	}
+	
+	@Test
+	public void Exercicio7Test() {
+		List<String> parentes = exercicio.exercicio7();
+		assertTrue(parentes.contains("Tio"));
+		assertTrue(parentes.contains("Tia"));
+		assertTrue(parentes.contains("Primos"));
+		assertTrue(parentes.contains("Pai"));
+		assertTrue(parentes.contains("Mae"));
+		assertTrue(parentes.contains("Irmao"));
+		assertTrue(parentes.contains("Irma"));
 	}
 }
