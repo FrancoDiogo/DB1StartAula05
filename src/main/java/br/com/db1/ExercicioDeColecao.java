@@ -7,17 +7,12 @@ import java.util.List;
 public class ExercicioDeColecao {
 	
 	public List<String> exercicio1() {
-		List<String> cores = new ArrayList<String>();
-		cores.add("Azul");
-		cores.add("Preto");
-		cores.add("Branco");
+		List<String> cores = Arrays.asList("Azul" , "Preto" , "Branco");
 		return cores;
 	}
 	
 	public Integer exercicio2() {
-		List<String> nomes = new ArrayList<String>();
-		nomes.add("Diogo");
-		nomes.add("Franco");
+		List<String> nomes = Arrays.asList("Diogo" , "Franco");
 		return nomes.size();
 	}
 
@@ -25,5 +20,14 @@ public class ExercicioDeColecao {
 		List<String> nomes = Arrays.asList("Pai" , "Mae" , "Irmao" , "Irma" , "Tio" , "Tia" , "Primos");
 		nomes.remove("Pai" + "Mae");
 		return nomes;
+	}
+
+	public List<String> exercicio4() {
+		List<String> cidades = new ArrayList<String>();
+		cidades.add("Maringa");
+		cidades.add("Sarandi");
+		cidades.add("Curitiba");
+		cidades.remove(1);
+		return cidades;
 	}
 }

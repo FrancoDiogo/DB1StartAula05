@@ -29,4 +29,10 @@ public class ExercicioDeColecaoTest {
 		List<String> nomes = exercicio.exercicio3();
 		assertFalse(nomes.contains("Pai" + "Mae"));
 	}
+	
+	@Test
+	public void Exercicio4Test() {
+		List<String> cidades = exercicio.exercicio4();
+		assertFalse(cidades.contains("Sarandi"));
+	}
 }
