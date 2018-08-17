@@ -3,7 +3,6 @@ package br.com.db1;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Test;
@@ -27,8 +26,9 @@ public class ExercicioDeColecaoTest {
 	
 	@Test
 	public void Exercicio3Test() {
-		List<String> nomes = exercicio.exercicio3();
-		assertFalse(nomes.contains("Pai" + "Mae"));
+		List<String> parentes = exercicio.exercicio3();
+		assertFalse(parentes.contains("Pai"));
+		assertFalse(parentes.contains("Mae"));
 	}
 	
 	@Test

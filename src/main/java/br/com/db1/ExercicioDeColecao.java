@@ -6,22 +6,36 @@ import java.util.Collections;
 import java.util.List;
 
 public class ExercicioDeColecao {
-	
-	List<String> cores = Arrays.asList("Azul" , "Preto" , "Branco");
+
+	List<String> cores = new ArrayList<String>();
+	List<String> parentes = new ArrayList<String>();
+
+	public ExercicioDeColecao() {
+		cores.add("Azul");
+		cores.add("Preto");
+		cores.add("Branco");
+		parentes.add("Pai");
+		parentes.add("Mae");
+		parentes.add("Irmao");
+		parentes.add("Irma");
+		parentes.add("Tio");
+		parentes.add("Tia");
+		parentes.add("Primos");	
+	}
 	
 	public List<String> exercicio1() {
 		return cores;
 	}
-	
+
 	public Integer exercicio2() {
-		List<String> nomes = Arrays.asList("Diogo" , "Franco");
+		List<String> nomes = Arrays.asList("Diogo", "Franco");
 		return nomes.size();
 	}
 
 	public List<String> exercicio3() {
-		List<String> nomes = Arrays.asList("Pai" , "Mae" , "Irmao" , "Irma" , "Tio" , "Tia" , "Primos");
-		nomes.remove("Pai" + "Mae");
-		return nomes;
+		parentes.remove("Pai");
+		parentes.remove("Mae");
+		return parentes;
 	}
 
 	public List<String> exercicio4() {
@@ -32,17 +46,13 @@ public class ExercicioDeColecao {
 		cidades.remove(1);
 		return cidades;
 	}
-	
+
 	public List<String> exercicio5() {
 		Collections.sort(cores);
 		return cores;
 	}
 
 	public List<String> exercicio6() {
-		List<String> cores = new ArrayList<String>();
-		cores.add("Azul");
-		cores.add("Preto");
-		cores.add("Branco");
 		cores.remove("Azul");
 		return cores;
 	}
