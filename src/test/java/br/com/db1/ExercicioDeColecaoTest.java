@@ -3,6 +3,7 @@ package br.com.db1;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Test;
@@ -34,5 +35,13 @@ public class ExercicioDeColecaoTest {
 	public void Exercicio4Test() {
 		List<String> cidades = exercicio.exercicio4();
 		assertFalse(cidades.contains("Sarandi"));
+	}
+	
+	@Test
+	public void Exercicio5Test() {
+		List<String> cores = exercicio.exercicio5();
+		assertTrue(cores.get(0) == "Azul");
+		assertTrue(cores.get(1) == "Branco");
+		assertTrue(cores.get(2) == "Preto");	
 	}
 }

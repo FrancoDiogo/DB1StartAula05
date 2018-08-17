@@ -2,12 +2,14 @@ package br.com.db1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ExercicioDeColecao {
 	
+	List<String> cores = Arrays.asList("Azul" , "Preto" , "Branco");
+	
 	public List<String> exercicio1() {
-		List<String> cores = Arrays.asList("Azul" , "Preto" , "Branco");
 		return cores;
 	}
 	
@@ -29,5 +31,10 @@ public class ExercicioDeColecao {
 		cidades.add("Curitiba");
 		cidades.remove(1);
 		return cidades;
+	}
+	
+	public List<String> exercicio5() {
+		Collections.sort(cores);
+		return cores;
 	}
 }
