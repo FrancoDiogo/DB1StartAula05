@@ -16,7 +16,7 @@ public class ExercicioDeColecaoTest {
 		List<String> cores = exercicio.exercicio1();
 		assertTrue(cores.contains("Azul"));
 		assertTrue(cores.contains("Preto"));
-		assertTrue(cores.contains("Branco"));	
+		assertTrue(cores.contains("Branco"));
 	}
 	
 	@Test
@@ -61,5 +61,31 @@ public class ExercicioDeColecaoTest {
 		assertTrue(parentes.contains("Mae"));
 		assertTrue(parentes.contains("Irmao"));
 		assertTrue(parentes.contains("Irma"));
+	}
+	
+	@Test
+	public void Exericio8Test() {
+		List<Integer> pares = exercicio.exercicio8();
+		assertTrue(pares.contains(2));
+		assertTrue(pares.contains(4));
+		assertTrue(pares.contains(6));
+		assertTrue(pares.contains(8));
+		assertTrue(pares.contains(10));
+		assertTrue(pares.contains(12));
+		assertTrue(pares.contains(14));
+		assertTrue(pares.contains(16));
+		assertTrue(pares.contains(18));
+		assertTrue(pares.contains(20));
+		List<Integer> impares = exercicio.exercicio8();
+		assertTrue(impares.contains(1));
+		assertTrue(impares.contains(3));
+		assertTrue(impares.contains(5));
+		assertTrue(impares.contains(7));
+		assertTrue(impares.contains(8));
+		assertTrue(impares.contains(11));
+		assertTrue(impares.contains(13));
+		assertTrue(impares.contains(15));
+		assertTrue(impares.contains(17));
+		assertTrue(impares.contains(19));
 	}
 }

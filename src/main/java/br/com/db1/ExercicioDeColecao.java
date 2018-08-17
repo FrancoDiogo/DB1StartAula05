@@ -62,4 +62,9 @@ public class ExercicioDeColecao {
 		Collections.sort(parentes, Collections.reverseOrder());
 		return parentes;
 	}
+
+	public List<Integer> exercicio8() {
+		for (parametro % 2 == 0){
+		return null;}
+	}
 }
