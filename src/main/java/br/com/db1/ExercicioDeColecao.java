@@ -19,9 +19,9 @@ public class ExercicioDeColecao {
 		parentes.add("Irma");
 		parentes.add("Tio");
 		parentes.add("Tia");
-		parentes.add("Primos");	
+		parentes.add("Primos");
 	}
-	
+
 	public List<String> exercicio1() {
 		return cores;
 	}
@@ -64,7 +64,18 @@ public class ExercicioDeColecao {
 	}
 
 	public List<Integer> exercicio8() {
-		for (parametro % 2 == 0){
-		return null;}
+		List<Integer> pares = new ArrayList<Integer>();
+		List<Integer> impares = new ArrayList<Integer>();
+
+		for (Integer x = 1; x < 20;) {
+			if (x % 2 == 0) {
+				x++;
+			}
+			/*if (x % 2 != 0) {
+				x++;
+				return impares;
+			}*/
+		}
+		return pares;
 	}
 }
