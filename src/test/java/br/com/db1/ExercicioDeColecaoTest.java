@@ -64,28 +64,28 @@ public class ExercicioDeColecaoTest {
 	}
 	
 	@Test
-	public void Exericio8Test() {
-		List<Integer> pares = exercicio.exercicio8();
-		assertTrue(pares.contains(2));
-		assertTrue(pares.contains(4));
-		assertTrue(pares.contains(6));
-		assertTrue(pares.contains(8));
-		assertTrue(pares.contains(10));
-		assertTrue(pares.contains(12));
-		assertTrue(pares.contains(14));
-		assertTrue(pares.contains(16));
-		assertTrue(pares.contains(18));
-		assertTrue(pares.contains(20));
-		/*List<Integer> impares = exercicio.exercicio8();
-		assertTrue(impares.contains(1));
-		assertTrue(impares.contains(3));
-		assertTrue(impares.contains(5));
-		assertTrue(impares.contains(7));
-		assertTrue(impares.contains(8));
-		assertTrue(impares.contains(11));
-		assertTrue(impares.contains(13));
-		assertTrue(impares.contains(15));
-		assertTrue(impares.contains(17));
-		assertTrue(impares.contains(19));*/
+	public void exercicio8Test(){
+		exercicio.exercicio8();
+		assertTrue(exercicio.pares.get(0) == 2);
+		assertTrue(exercicio.pares.get(1) == 4);
+		assertTrue(exercicio.pares.get(2) == 6);
+		assertTrue(exercicio.pares.get(3) == 8);
+		assertTrue(exercicio.pares.get(4) == 10);
+		assertTrue(exercicio.pares.get(5) == 12);
+		assertTrue(exercicio.pares.get(6) == 14);
+		assertTrue(exercicio.pares.get(7) == 16);
+		assertTrue(exercicio.pares.get(8) == 18);
+		assertTrue(exercicio.pares.get(9) == 20);
+		
+		assertTrue(exercicio.impares.get(0) == 1);
+		assertTrue(exercicio.impares.get(1) == 3);
+		assertTrue(exercicio.impares.get(2) == 5);
+		assertTrue(exercicio.impares.get(3) == 7);
+		assertTrue(exercicio.impares.get(4) == 9);
+		assertTrue(exercicio.impares.get(5) == 11);
+		assertTrue(exercicio.impares.get(6) == 13);
+		assertTrue(exercicio.impares.get(7) == 15);
+		assertTrue(exercicio.impares.get(8) == 17);
+		assertTrue(exercicio.impares.get(9) == 19);
 	}
 }

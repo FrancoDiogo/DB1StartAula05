@@ -8,6 +8,8 @@ public class ExercicioDeColecao {
 
 	List<String> cores = new ArrayList<String>();
 	List<String> parentes = new ArrayList<String>();
+	List<Integer> pares = new ArrayList<Integer>();
+	List<Integer> impares = new ArrayList<Integer>();
 
 	public ExercicioDeColecao() {
 		cores.add("Azul");
@@ -63,19 +65,14 @@ public class ExercicioDeColecao {
 		return parentes;
 	}
 
-	public List<Integer> exercicio8() {
-		List<Integer> pares = new ArrayList<Integer>();
-		List<Integer> impares = new ArrayList<Integer>();
-
-		for (Integer x = 1; x < 20;) {
+	public void exercicio8() {
+		for (Integer x = 1; x < 21; x++) {
+			
 			if (x % 2 == 0) {
-				x++;
+				pares.add(x);
+				continue;
 			}
-			/*if (x % 2 != 0) {
-				x++;
-				return impares;
-			}*/
+			impares.add(x);
 		}
-		return pares;
 	}
 }
