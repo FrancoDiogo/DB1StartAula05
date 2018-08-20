@@ -53,7 +53,7 @@ public class EstadosDoBrasilTest {
 		assertTrue(EstadosDoBrasil.getEstadosDoNorte().contains(EstadosDoBrasil.PARA));
 		assertTrue(EstadosDoBrasil.getEstadosDoNorte().contains(EstadosDoBrasil.AMAPA));
 		assertTrue(EstadosDoBrasil.getEstadosDoNorte().contains(EstadosDoBrasil.RORAIMA));
-
+		assertFalse(EstadosDoBrasil.getEstadosDoNorte().contains(EstadosDoBrasil.BAHIA));
 	}
 	
 	@Test

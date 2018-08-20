@@ -77,7 +77,7 @@ public enum EstadosDoBrasil {
 	}
 
 	public static List<EstadosDoBrasil> getEstadosDoNorte() {
-		return Arrays.asList(TOCANTINS, RONDONIA, ACRE, AMAZONAS, PARA, AMAPA, RORAIMA, BAHIA);
+		return Arrays.asList(TOCANTINS, RONDONIA, ACRE, AMAZONAS, PARA, AMAPA, RORAIMA);
 	}
 
 	public static List<EstadosDoBrasil> getEstadosDoNordeste() {
