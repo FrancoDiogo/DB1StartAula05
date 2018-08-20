@@ -4,6 +4,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.List;
+import java.util.TreeSet;
 
 import org.junit.Test;
 
@@ -87,5 +88,23 @@ public class ExercicioDeColecaoTest {
 		assertTrue(exercicio.impares.get(7) == 15);
 		assertTrue(exercicio.impares.get(8) == 17);
 		assertTrue(exercicio.impares.get(9) == 19);
+	}
+	
+	@Test
+	public void exercicio9Test() {
+		TreeSet<String> nomesDistintos = exercicio.exercicio9();
+		assertTrue(nomesDistintos.contains("ANA"));
+		assertTrue(nomesDistintos.contains("ANA LAURA"));
+		assertTrue(nomesDistintos.contains("CLECIO"));
+		assertTrue(nomesDistintos.contains("JOALDO"));
+		assertTrue(nomesDistintos.contains("JOSE"));
+		assertTrue(nomesDistintos.contains("JOSÉ"));
+		assertTrue(nomesDistintos.contains("MARCOS"));
+		assertTrue(nomesDistintos.contains("MARIA"));
+		assertTrue(nomesDistintos.contains("ROBERVAL"));
+		assertTrue(nomesDistintos.contains("RODOLFO"));
+		assertTrue(nomesDistintos.contains("RODOLPHO"));
+		assertTrue(nomesDistintos.contains("VAGNER"));
+		assertTrue(nomesDistintos.contains("WAGNER"));
 	}
 }

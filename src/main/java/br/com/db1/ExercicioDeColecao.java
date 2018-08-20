@@ -3,6 +3,7 @@ package br.com.db1;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.TreeSet;
 
 public class ExercicioDeColecao {
 
@@ -74,5 +75,24 @@ public class ExercicioDeColecao {
 			}
 			impares.add(x);
 		}
+	}
+
+	public TreeSet<String> exercicio9() {
+		TreeSet<String> nomesDistintos = new TreeSet<String>();
+		nomesDistintos.add("ANA");
+		nomesDistintos.add("ANA LAURA");
+		nomesDistintos.add("JOSE");
+		nomesDistintos.add("WAGNER");
+		nomesDistintos.add("RODOLFO");
+		nomesDistintos.add("ROBERVAL");
+		nomesDistintos.add("RODOLPHO");
+		nomesDistintos.add("VAGNER");
+		nomesDistintos.add("JOSÉ");
+		nomesDistintos.add("JOALDO");
+		nomesDistintos.add("CLECIO");
+		nomesDistintos.add("JOSÉ");
+		nomesDistintos.add("MARIA");
+		nomesDistintos.add("MARCOS");
+		return nomesDistintos;
 	}
 }
