@@ -3,23 +3,23 @@ package br.com.db1.type;
 public enum TipoLogradouro {
 	
 	RUA("Rua", "R"),
-	FAZENDA("Fazenda", "FZ"),
-	PRACA("Praça", "PC"),
-	AVENIDA("Avenida", "AV");
+	FAZENDA("Fazenda", "Fz"),
+	PRACA("Praça", "Pc"),
+	AVENIDA("Avenida", "Av");
 	
 	String descricaoLogradouro;
-	String abreviacaoLogradouro;
+	String siglaLogradouro;
 	
-	TipoLogradouro(String descricao, String abreviacao){
+	TipoLogradouro(String descricao, String sigla){
 		descricaoLogradouro = descricao;
-		abreviacaoLogradouro = abreviacao;
+		siglaLogradouro = sigla;
 	}
 	
 	public String getDescricaoLogradouro() {
 		return descricaoLogradouro;
 	}
 	
-	public String getAbreviacaoLogradouro() {
-		return abreviacaoLogradouro;
+	public String getSiglaLogradouro() {
+		return siglaLogradouro;
 	}
 }

@@ -6,9 +6,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import br.com.db1.type.EstadosDoBrasil;
-
-public enum EstadosDoBrasilTest {
+public class EstadosDoBrasilTest {
 	
 	@Test
 	public void escritaCertaNomeDosEstadosTest() {
@@ -55,7 +53,7 @@ public enum EstadosDoBrasilTest {
 		assertTrue(EstadosDoBrasil.getEstadosDoNorte().contains(EstadosDoBrasil.PARA));
 		assertTrue(EstadosDoBrasil.getEstadosDoNorte().contains(EstadosDoBrasil.AMAPA));
 		assertTrue(EstadosDoBrasil.getEstadosDoNorte().contains(EstadosDoBrasil.RORAIMA));
-		assertFalse(EstadosDoBrasil.getEstadosDoNorte().contains(EstadosDoBrasil.BAHIA));
+
 	}
 	
 	@Test

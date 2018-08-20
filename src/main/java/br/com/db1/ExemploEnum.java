@@ -10,9 +10,9 @@ public class ExemploEnum {
 		System.out.println("-------------------");
 		System.out.println(TipoLogradouro.RUA.getDescricaoLogradouro());
 		System.out.println(TipoLogradouro.PRACA.getDescricaoLogradouro());
-		System.out.println(TipoLogradouro.RUA.getAbreviacaoLogradouro());
-		System.out.println(TipoLogradouro.FAZENDA.getAbreviacaoLogradouro());
-		System.out.println(TipoLogradouro.PRACA.getAbreviacaoLogradouro());
-		System.out.println(TipoLogradouro.AVENIDA.getAbreviacaoLogradouro());
+		System.out.println(TipoLogradouro.RUA.getSiglaLogradouro());
+		System.out.println(TipoLogradouro.FAZENDA.getSiglaLogradouro());
+		System.out.println(TipoLogradouro.PRACA.getSiglaLogradouro());
+		System.out.println(TipoLogradouro.AVENIDA.getSiglaLogradouro());
 	}
 }
